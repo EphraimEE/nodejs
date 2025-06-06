@@ -1,7 +1,7 @@
 {
   "name": "nodejsassignment1",
   "version": "1.0.0",
-  "description": "A simple HTML server built with pure Node.js.",
+  "description": "HTML server built with pure Node.js.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
