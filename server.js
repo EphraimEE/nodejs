@@ -2,7 +2,8 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || '0.0.0.0';
 
 const server = http.createServer((req, res) => {
   const filePath = path.join(__dirname, req.url);
@@ -18,7 +19,6 @@ const server = http.createServer((req, res) => {
       }
     });
   } else if (req.url.endsWith('.html')) {
-    // Send bare 404 status with default browser message
     res.writeHead(404);
     res.end();
   } else {
@@ -27,6 +27,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
+server.listen(PORT, HOST, () => {
+    console.log(`Server running at http://${HOST}:${PORT}`);
+  });
