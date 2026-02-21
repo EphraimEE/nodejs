@@ -1,0 +1,30 @@
+{
+  "name": "nodejsassignment1",
+  "version": "1.0.0",
+  "description": "HTML server built with pure Node.js.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EphraimEE/nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "pure-node",
+    "html-server",
+    "pipeops"
+  ],
+  "author": "Ephraim",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "semver": "7.7.2"
+  },
+  "bugs": {
+    "url": "https://github.com/EphraimEE/nodejs/issues"
+  },
+  "homepage": "https://github.com/EphraimEE/nodejs#readme"
+}
